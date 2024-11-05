@@ -1,0 +1,245 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+    margin-bottom: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}   
+
+.logo img {
+    height: 60px; 
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo-company img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fef3c7, #9ca3af);
+
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* Outer box border */
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-header,
+.card-content,
+.card-footer {
+    border: none;
+    
+    padding: 20px;
+}
+
+.card-header {
+    background-color: #ffffff;
+    height: 120px;
+}
+
+.card-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-header p {
+    color: #666;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card-footer {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 14px 5rem;
+    background-color: #1b1c1d;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #5f6163;
+}
+
+/* Accordion Styling */
+.accordion details {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion summary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Custom caret icon */
+.accordion summary::after {
+    content: "\25BC";
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+}
+
+details[open] summary::after {
+    content: "\25B2";
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #fff;
+    line-height: 1.6;
+    list-style: decimal;
+}
+
+.accordion-content li {
+    margin-bottom: 8px;
+}
+
+details[open] .accordion-content {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Wide Section Card Styling */
+.wide-card {
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.wide-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wide-card-content {
+    position: relative;
+    height: 300px;
+}
+
+.wide-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wide-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.wide-card-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.wide-card-subtitle {
+    font-size: 1.2rem;
+}
