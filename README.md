@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="lpunexus.png" alt="LPU Nexus logo" width="160">
-
 # LPU Nexus
 
 **Everything you need at LPU, in one place.**
