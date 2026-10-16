@@ -34,7 +34,7 @@ It is a plain static website: no sign-up, no backend, and nothing you type is se
 - 🔍 **Instant search** – filter services, tools and food courts as you type, from the hero box or the navbar. Press `/` to jump to search and `Esc` to clear it.
 - 🧮 **CGPA / SGPA Calculator** – add as many courses as you like with credits and grades (LPU 10-point scale) to get your SGPA live, and optionally add your previous CGPA and credits to see your updated CGPA.
 - 🔄 **Grade Converter** – switch between a letter grade (O, A+, A … F) and its grade point, with a 100-point equivalent (grade point × 10).
-- 🍔 **Food courts page** – Central Mess, Food Factory, Kitchen Ette and NK Food Court, with location and a short description of each.
+- 🍔 **Food courts page** – Central Mess, Food Factory, Kitchen Ette and NK Food Court, with location, a short description and a link to directions in Google Maps for each.
 - 🌗 **Dark / light theme** – toggle in the navbar; your choice is remembered in the browser.
 - 📱 **Responsive layout** – mobile menu, a navbar that condenses on scroll, and scroll-in animations that respect "reduced motion" settings.
 
