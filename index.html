@@ -16,6 +16,10 @@
     <meta name="twitter:card" content="summary">
     <link rel="icon" href="lpulogo.png">
     <link rel="stylesheet" href="index.css">
+    <script>
+        /* apply the saved theme before first paint so light mode never flashes dark */
+        try { var t = localStorage.getItem('lpu-nexus-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) { }
+    </script>
 </head>
 
 <body>
